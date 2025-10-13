@@ -1,0 +1,240 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi|hello|hey|good morning|good afternoon|good evening",
+        "greetings|how are you|what's up",
+        "is anyone there|is someone available"
+      ],
+      "responses": [
+        "Hello! I'm MediBot, your healthcare assistant. How can I help you today?",
+        "Hi there! Welcome to MediBot. What health concerns can I assist you with?",
+        "Greetings! I'm here to help with your healthcare questions. What would you like to know?",
+        "Hello! I'm MediBot, ready to assist you with medical information and guidance."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye|goodbye|see you later|take care",
+        "thanks|thank you|that's all|i'm done",
+        "have a good day|farewell"
+      ],
+      "responses": [
+        "Goodbye! Take care of your health and don't hesitate to come back if you need assistance.",
+        "Thank you for using MediBot! Stay healthy and have a wonderful day!",
+        "Farewell! Remember to prioritize your health. See you next time!",
+        "Take care! I'm always here when you need health-related guidance."
+      ]
+    },
+    {
+      "tag": "introduction",
+      "patterns": [
+        "my name is (\\w+)|i am (\\w+)|call me (\\w+)",
+        "i'm (\\w+)|my name's (\\w+)",
+        "you can call me (\\w+)"
+      ],
+      "responses": [
+        "Nice to meet you, {name}! How can I assist you with your health today?",
+        "Hello {name}! I'm glad you're here. What health questions do you have?",
+        "Welcome {name}! I'm here to help with any healthcare concerns you might have.",
+        "Hi {name}! It's great to meet you. How can I support your health needs today?"
+      ]
+    },
+    {
+      "tag": "age_info",
+      "patterns": [
+        "i am (\\d+) years old|i'm (\\d+) years old",
+        "my age is (\\d+)|age (\\d+)",
+        "(\\d+) years old"
+      ],
+      "responses": [
+        "Thank you for sharing, {name}. At {age} years old, it's important to maintain good health habits.",
+        "I've noted that you're {age} years old. Health recommendations can vary by age group.",
+        "Good to know you're {age}! Age-appropriate health care is very important.",
+        "Thanks for letting me know you're {age}. I can provide age-relevant health guidance."
+      ]
+    },
+    {
+      "tag": "headache",
+      "patterns": [
+        "i have a headache|my head hurts|head pain",
+        "severe headache|terrible headache|bad headache",
+        "migraine|head is pounding|throbbing head",
+        "headache relief|what to do for headache"
+      ],
+      "responses": [
+        "For headaches, try resting in a quiet, dark room and stay hydrated. Over-the-counter pain relievers may help, but consult a doctor if severe or persistent.",
+        "Headaches can be caused by stress, dehydration, or tension. Try applying a cold compress and getting adequate rest. If it continues, please see a healthcare provider.",
+        "I'm sorry you're experiencing head pain. Consider drinking water, taking a break from screens, and gentle neck stretches. Seek medical attention if symptoms worsen.",
+        "Headaches are common but shouldn't be ignored if frequent. Rest, hydration, and stress management often help. Consult a doctor for recurring issues."
+      ]
+    },
+    {
+      "tag": "fever",
+      "patterns": [
+        "i have a fever|running a fever|high temperature",
+        "what to do for fever|fever treatment|reduce fever",
+        "body temperature is high|feeling hot|burning up",
+        "fever symptoms|temp is (\\d+)"
+      ],
+      "responses": [
+        "For fever, rest and drink plenty of fluids. You can take acetaminophen or ibuprofen as directed. Seek medical care if fever exceeds 103°F (39.4°C) or persists.",
+        "Fever indicates your body is fighting infection. Stay hydrated, rest, and consider fever-reducing medication. Contact a doctor if concerned or if fever is very high.",
+        "Monitor your fever and stay comfortable. Lukewarm baths and light clothing can help. Seek immediate medical attention if fever is accompanied by severe symptoms.",
+        "Fever management includes rest, fluids, and appropriate medication. Please consult healthcare professionals if fever persists over 3 days or reaches dangerous levels."
+      ]
+    },
+    {
+      "tag": "cold_flu",
+      "patterns": [
+        "i have a cold|cold symptoms|runny nose",
+        "flu symptoms|i have the flu|feeling sick",
+        "cough and sneezing|sore throat|congestion",
+        "stuffy nose|body aches|chills"
+      ],
+      "responses": [
+        "For cold/flu symptoms, get plenty of rest, stay hydrated, and consider warm salt water gargles for sore throat. Most symptoms resolve in 7-10 days.",
+        "Common cold and flu symptoms can be managed with rest, fluids, and over-the-counter medications. See a doctor if symptoms worsen or persist beyond 10 days.",
+        "I understand you're not feeling well. Warm liquids, throat lozenges, and adequate sleep can help. Seek medical care if you develop high fever or difficulty breathing.",
+        "Cold and flu recovery takes time. Focus on rest, nutrition, and staying hydrated. Contact healthcare providers if symptoms become severe or concerning."
+      ]
+    },
+    {
+      "tag": "stomach_pain",
+      "patterns": [
+        "stomach pain|stomach ache|belly hurts",
+        "abdominal pain|stomach cramps|nausea",
+        "feeling nauseous|want to vomit|upset stomach",
+        "digestive issues|stomach problems"
+      ],
+      "responses": [
+        "For stomach discomfort, try eating bland foods like toast or crackers, stay hydrated with small sips of water, and avoid spicy or fatty foods. Seek medical attention if severe.",
+        "Stomach pain can have various causes. Try resting, applying gentle heat, and eating light foods. If pain is severe, persistent, or accompanied by fever, see a doctor.",
+        "I'm sorry you're experiencing stomach issues. Consider the BRAT diet (bananas, rice, applesauce, toast) and clear fluids. Medical evaluation may be needed for severe symptoms.",
+        "Digestive discomfort is common but shouldn't be ignored if severe. Rest, gentle foods, and avoiding irritants often help. Consult healthcare providers for persistent issues."
+      ]
+    },
+    {
+      "tag": "appointment_booking",
+      "patterns": [
+        "book an appointment|schedule appointment|make appointment",
+        "i need to see a doctor|want to schedule|set up consultation",
+        "appointment availability|when can i come in",
+        "reserve a slot|consultation booking"
+      ],
+      "responses": [
+        "I'd be happy to help you schedule an appointment! Please provide your preferred date, time, and the type of consultation you need. You can also call our office directly.",
+        "To book an appointment, I'll need some information from you. What type of medical service do you need, and when would work best for you?",
+        "Great! Let's get you scheduled. What's the reason for your visit, and do you have any preferred dates or times? Our staff can also assist by phone.",
+        "I can help you with appointment scheduling. Please share your availability and the type of medical care you're seeking. We'll find a suitable time slot."
+      ]
+    },
+    {
+      "tag": "contact_info",
+      "patterns": [
+        "my phone number is ([\\d\\s\\-\\.\\(\\)]+)",
+        "you can reach me at ([\\d\\s\\-\\.\\(\\)]+)",
+        "my number is ([\\d\\s\\-\\.\\(\\)]+)",
+        "contact me at ([\\d\\s\\-\\.\\(\\)]+)"
+      ],
+      "responses": [
+        "Thank you for providing your contact information ({phone}). We'll use this to reach you regarding appointments or follow-ups.",
+        "I've noted your phone number as {phone}. This will help us contact you for appointment confirmations and health reminders.",
+        "Great! I have your contact number ({phone}) on file. We'll use this for any necessary communication about your healthcare.",
+        "Thank you, {name}! Your phone number {phone} has been recorded for appointment scheduling and health-related communications."
+      ]
+    },
+    {
+      "tag": "emergency",
+      "patterns": [
+        "emergency|urgent|help me|this is serious",
+        "can't breathe|chest pain|severe pain",
+        "unconscious|heart attack|stroke symptoms",
+        "bleeding heavily|serious injury"
+      ],
+      "responses": [
+        "This sounds like a medical emergency! Please call 911 immediately or go to the nearest emergency room. Don't delay seeking immediate medical attention.",
+        "EMERGENCY: Please call emergency services (911) right away! For life-threatening situations, immediate professional medical care is essential.",
+        "This requires immediate medical attention! Call 911 or have someone drive you to the emergency room immediately. Time is critical in emergencies.",
+        "URGENT: Call 911 now! For severe symptoms like chest pain, difficulty breathing, or serious injuries, emergency medical services are needed immediately."
+      ]
+    },
+    {
+      "tag": "medication_inquiry",
+      "patterns": [
+        "what medication|medicine for|drug information",
+        "side effects|medication dosage|how much to take",
+        "prescription information|over the counter|otc drugs",
+        "drug interactions|medicine safety"
+      ],
+      "responses": [
+        "For medication information, I recommend consulting with a pharmacist or your doctor. They can provide accurate dosing, side effects, and interaction details for your specific situation.",
+        "Medication questions are best addressed by healthcare professionals. Please speak with your doctor or pharmacist about dosages, side effects, and drug interactions.",
+        "I cannot provide specific medication advice. For safety, always consult with licensed healthcare providers or pharmacists for drug information and dosing guidance.",
+        "Medication safety is crucial. Please discuss any drug-related questions with your doctor, pharmacist, or other qualified healthcare professionals for accurate information."
+      ]
+    },
+    {
+      "tag": "mental_health",
+      "patterns": [
+        "feeling depressed|anxiety|mental health|stressed",
+        "emotional support|feeling sad|worried|panic",
+        "counseling|therapy|psychological help",
+        "mental wellness|emotional wellbeing"
+      ],
+      "responses": [
+        "Mental health is just as important as physical health. Consider speaking with a counselor, therapist, or your doctor. Many resources are available to support your emotional wellbeing.",
+        "I understand you're going through a difficult time. Mental health support is available through counseling services, therapy, and medical professionals. You don't have to face this alone.",
+        "Thank you for sharing your concerns. Mental health support includes therapy, counseling, and medical treatment. Please reach out to mental health professionals or your doctor.",
+        "Your mental health matters. Professional support through counseling, therapy, or medical care can be very helpful. Consider contacting mental health services in your area."
+      ]
+    },
+    {
+      "tag": "general_health",
+      "patterns": [
+        "health tips|stay healthy|wellness advice",
+        "healthy lifestyle|diet and exercise|nutrition",
+        "preventive care|health maintenance|wellness",
+        "healthy habits|health recommendations"
+      ],
+      "responses": [
+        "Great question! Key health tips include: regular exercise, balanced nutrition, adequate sleep (7-9 hours), staying hydrated, managing stress, and regular medical check-ups.",
+        "For optimal health: eat a variety of fruits and vegetables, exercise regularly, get sufficient sleep, limit alcohol, don't smoke, and maintain regular healthcare visits.",
+        "Healthy living includes physical activity, nutritious eating, good sleep hygiene, stress management, and preventive healthcare. Small daily choices make a big difference!",
+        "Wellness fundamentals: balanced diet, regular movement, quality sleep, hydration, stress reduction, and routine medical care. Consistency in healthy habits is key!"
+      ]
+    },
+    {
+      "tag": "insurance_billing",
+      "patterns": [
+        "insurance|billing|payment|cost|charges",
+        "copay|deductible|coverage|claim",
+        "how much does it cost|medical bills|payment plan",
+        "insurance accepted|billing questions"
+      ],
+      "responses": [
+        "For insurance and billing questions, please contact our billing department or your insurance provider directly. They can provide specific information about coverage and costs.",
+        "Insurance and payment questions are best handled by our administrative staff. Please call our office to discuss coverage, copays, and billing arrangements.",
+        "Billing and insurance matters require specific account information. Our billing specialists can help you understand coverage, costs, and payment options.",
+        "For detailed insurance and billing information, please speak with our administrative team. They can verify coverage and explain costs for your specific situation."
+      ]
+    },
+    {
+      "tag": "hours_location",
+      "patterns": [
+        "office hours|when are you open|what time",
+        "location|address|where are you located",
+        "directions|how to get there|parking",
+        "clinic hours|operating hours"
+      ],
+      "responses": [
+        "Our office hours are Monday-Friday 8:00 AM to 6:00 PM, Saturday 9:00 AM to 2:00 PM. We're located at 123 Health Street, Medical District. Parking is available on-site.",
+        "We're open Monday through Friday 8:00 AM - 6:00 PM, and Saturdays 9:00 AM - 2:00 PM. You can find us at 123 Health Street with convenient parking available.",
+        "Office hours: M-F 8:00 AM to 6:00 PM, Sat 9:00 AM to 2:00 PM, closed Sundays. Address: 123 Health Street, Medical District. Free parking for patients.",
+        "Visit us Monday-Friday 8:00 AM - 6:00 PM or Saturday 9:00 AM - 2:00 PM at 123 Health Street. We provide patient parking and are easily accessible by public transport."
+      ]
+    }
+  ]
+}
